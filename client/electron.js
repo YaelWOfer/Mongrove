@@ -1,9 +1,18 @@
 const { app, BrowserWindow } = require('electron');
 
+// main process
+// const { ipcMain } = require('electron');
+
+// ipcMain.on('anything-asynchronous', (event, arg) => {
+// //execute tasks on behalf of renderer process 
+//     console.log(arg) // prints "ping"
+// })
+
+
+
 
 // try {
 // 	require('electron-reloader')(module, {
-//     debug: true,
 //     watchRenderer: true
 //   })
 // } catch (_) { console.log('Error'); }
