@@ -25,6 +25,6 @@ const Navbar = () => {
   )
 };
 
-
+// test comment for git push
 
 export default Navbar;
