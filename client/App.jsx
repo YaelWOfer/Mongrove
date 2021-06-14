@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { HashRouter, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import Navbar from './components/Navbar';
 import QueryPage from './pages/QueryPage';

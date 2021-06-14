@@ -37,3 +37,12 @@ function createWindow () {
 }
 
 app.on('ready', createWindow);
+
+//quit when main browserwindow instance is closed
+// win.on('closed', () => {app.quit()})
+//quit when all windows are closed - for Mac users, otherwise app and its menu bar will stay active until user explicitly quits
+// app.on('window-all-closed', () => {
+//   if (process.platform !== 'darwin') {
+//     app.quit()
+//   }
+// })

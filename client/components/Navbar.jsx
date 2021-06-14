@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, NavLink, Link, Route, Switch } from "react-router-dom";
+import { HashRouter, NavLink, Route, Switch } from "react-router-dom";
 import { IconButton } from '@material-ui/core';
 // import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import { HelpOutlineRoundedIcon } from '@material-ui/icons/HelpOutlineRounded';
@@ -23,7 +23,7 @@ const Navbar = () => {
               // win.setMenu(null);
       })
       win.loadURL('replacethispath(https://www.electronjs.org/docs/api/remote)')
-      //possibly add win.loadfile here??
+      //possibly add win.loadfile here?? either serve a 2nd html file just for help panel, or use a react router to display help panel 
   }
 
 
