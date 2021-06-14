@@ -4,6 +4,8 @@ module.exports = [
     //main process
     {
       mode: 'development',
+      //change entry point to main/index.js?
+      //add second entry point somehow for renderer process (renderer/index.js)
       entry: './client/electron.js',
       target: 'electron-main',
       module: {
