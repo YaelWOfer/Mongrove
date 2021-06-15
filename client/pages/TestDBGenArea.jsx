@@ -2,25 +2,30 @@ import React from 'react';
 import { useState } from 'react';
 
 const TestDBGenArea = () => {
-    const [dbName, setDBName] = useState('');
-    const [testSchemaName, setTestSchemaName] = useState('');
-    const [numberOfRows, setNumberOfRows] = useState(0)
+    // const [dbName, setDBName] = useState('');
+    // const [testSchemaName, setTestSchemaName] = useState('');
+    // const [numberOfRows, setNumberOfRows] = useState(0)
     
-    //when GenerateTestDatabase button is clicked, add all 3 inputs to state
-    const handleGenerateTestDB = () => {
-        setDBName('');
-        setTestSchemaName('');
-        setNumberOfRows();
+    // //when GenerateTestDatabase button is clicked, add all 3 inputs to state
+    // const handleGenerateTestDB = () => {
+    //     setDBName('');
+    //     setTestSchemaName('');
+    //     setNumberOfRows();
     }
+
+
+
+const TestDBGenArea = () => {
 
     return (
         <div id="testdbGenArea">
+            <h2>TestDBGenArea component rendering</h2>
             <h6>Test Database Generation</h6>
 
-            <label for="testdbName">Test Database Name</label>
-            <input type="text" id="testdbName" name="testdbName" onChange={}/>
+            <label htmlFor="testdbName">Test Database Name</label>
+            <input type="text" id="testdbName" name="testdbName"/>
 
-            <label for="selectSchema">Select Schema Name</label>
+            <label htmlFor="selectSchema">Select Schema Name</label>
             <select id="selectSchema" name="selectSchema">
             {/* placeholder values for schema selection */}
                 <option value="sampleSchema1">sampleSchema1</option>
@@ -28,7 +33,7 @@ const TestDBGenArea = () => {
                 <option value="sampleSchema3">sampleSchema3</option>
             </select>
 
-            <label for="rowsNum">Enter number of rows</label>
+            <label htmlFor="rowsNum">Enter number of rows</label>
             <input type="text" id="rowsNum" name="rowsNum"/>
 
             <button type="submit" id="genTestdbBn" className="mainAreaBn" onClick={handleGenerateTestDB}>

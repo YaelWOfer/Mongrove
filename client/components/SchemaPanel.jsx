@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 import React from 'react';
 import SchemaItem from './SchemaItem';
 
 const SchemaPanel = () => {
     <p className="panelTitle">Schemas</p>
 
+=======
+import React, { useState } from 'react';
+
+// import SchemaItem from './SchemaItem';
+
+const SchemaPanel = () => {
+>>>>>>> 77edbffa7c5574e0be3448a96945701d4cd499e7
     // use state to populate schemas to display here
     const state = {
         schemaNameList: [], 
@@ -29,7 +37,12 @@ const SchemaPanel = () => {
             <h2> SCHEMAS </h2>
 
             <div id="schemaList">
+<<<<<<< HEAD
                 {schemaList}
+=======
+                {/* {schemaList} */}
+                schemaItem1
+>>>>>>> 77edbffa7c5574e0be3448a96945701d4cd499e7
             </div>
 
         </div>

@@ -5,12 +5,13 @@ const SchemaArea = () => {
     return (
         <div id="schemaArea" className="mainAreaComponents">
             {/* enter schema name field */}
-            <label for="schemaName">Enter Schema Name</label>
+            <h2>SchemaArea component rendering</h2>
+            <label htmlFor="schemaName">Enter Schema Name</label>
             <input type="text" id="schemaName" name="schemaName"/>
             
 
             {/* schema input field */}
-            <label for="schemaField">Schema Input Field</label>
+            <label htmlFor="schemaField">Schema Input Field</label>
             <input type="text" id="schemaField" name="schemaField"/>
            
             {/* save schema button */}
